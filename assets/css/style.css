@@ -1,0 +1,50 @@
+p {
+    width: 270px;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+ 
+.newButton, .button {
+    color: white;
+    background-color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px 5px;
+    border-style: solid;
+    border-color: black;
+    height: 30px;
+    width: auto;
+}
+
+.gif {
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+}
+
+#buttons{
+    height: 115px;
+}
+
+
+#showGifs {
+    width: 60%;
+    display: inline-block;
+}
+
+#searchGifs {
+    width: 30%;
+    float: right;
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#searchInput {
+    width: 100%;
+}
+
+#search-term {
+    margin-left: 0;
+}
