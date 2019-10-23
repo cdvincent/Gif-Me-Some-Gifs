@@ -40,11 +40,25 @@
 //assigning a variable for each gifs rating and creating a new p tag in the showGifs div to print the rating
                 let rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating).prependTo("#showGifs");
-//same for the images but with an image tag and assigning the still source as an attribute...
-                var stillGif = $("<img>").addClass("gif").attr("src", results[i].images.fixed_height_still.url).attr("state", "still").appendTo(p);
-//and another assigning the animated gif source as an attribute
-                var animateGif = $("<img>").addClass("gif").attr("src", results[i].images.fixed_height.url).attr("state", "animate")
+//same for the images but with an image tag and assigning the 
+                var gif = $("<img>").addClass("gif").attr("src", results[i].images.fixed_height_still.url).attr("data-animate", results[i].images.fixed_height.url).attr("data-still", results[i].images.fixed_height_still.url).attr("data-state", "still").appendTo(p);
             }
+
+        $(".gif").on("click", function(){
+
+            let state = $(this).attr("data-state");
+
+            if (state === "still") {
+                $(this).attr("src", $(this).attr("data-animate"));
+                $(this).attr("data-state", ("animate"));
+            } else {
+                $(this).attr("src", $(this).attr("data-still"));
+                $(this).attr("data-state", ("still"));
+            }
+            console.log(state);
+        });
+
+            
 
 
     });
