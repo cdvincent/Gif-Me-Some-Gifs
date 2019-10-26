@@ -1,10 +1,21 @@
+body {
+    background-color: lightblue;
+}
+
 p {
-    width: 270px;
-    float: left;
+    display: inline-block;
+    width: 300px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    border-color: cyan;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    background-color: white;
 }
- 
+
 .newButton, .button {
     color: white;
     background-color: teal;
@@ -21,28 +32,39 @@ p {
     width: 250px;
     height: 150px;
     margin: 20px;
+    border-style: solid;
+    border-color:greenyellow;
+    border-width: 2px;
 }
 
 #buttons{
-    height: 115px;
+    height: 100%;
+    background-color: cyan;
+    border-style: solid;
+    border-width: 2px;
 }
 
 
 #showGifs {
-    width: 60%;
-    display: inline-block;
+    width: 100%;
 }
 
 #searchGifs {
     width: 30%;
+    height: 100%;
+    background-color: cyan;
+    border-style: solid;
+    border-top-style: none;
+    border-width: 2px;
     float: right;
-    margin: 10px;
+    margin: 0;
+    padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
 #searchInput {
-    width: 100%;
+    width: 90%;
 }
 
 #search-term {
