@@ -1,0 +1,23 @@
+#title {
+    margin-top: 0px;
+    text-align: center;
+    background-color: aquamarine;
+    opacity: 4;
+
+}
+
+.buttons {
+    margin: 20px 5px;
+}
+
+.gif {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+p {
+    float: left;
+    text-align: center;
+    display: flex;
+}

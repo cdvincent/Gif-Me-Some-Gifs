@@ -2,7 +2,7 @@
     var topics = ["baseball", "football", "basketball", "hockey", "golf", "tennis"];
 //loop creating new button for each array item with self named attribute and adding a button class
     for (let i = 0; i < topics.length; i++) {
-        $("<button>").addClass("newButton").text(topics[i]).attr("data", topics[i]).appendTo("#buttons");
+        $("<button>").addClass("buttons newButton waves-effect waves-light btn").text(topics[i]).attr("data", topics[i]).appendTo("#buttons");
     }
 //on click function for submit button
     $("#search-term").on("click", function(event){
@@ -24,13 +24,13 @@
         return false;
     } else {
 //variable creating new button in same fashion as pre-made buttons
-    let newItem = $("<button>").addClass("newButton").text(userSearch).attr("data", userSearch).appendTo("#buttons");
+    let newItem = $("<button>").addClass("newButton waves-effect waves-light btn").text(userSearch).attr("data", userSearch).appendTo("#buttons");
 //pushing new item to existing array
     topics.push(newItem.attr("data"));
 //emptying search bar of previously entered text
     $("#searchInput").val("");
-    }
-    });
+}
+});
 //when items with newButton class are clicked...(document.body to interact with newly created buttons)
     $(document.body).on("click", ".newButton", function (){
 //assign the attribute to a variable
